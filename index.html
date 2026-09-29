@@ -50,6 +50,9 @@
     <nav class="white">
                 <div class="container">
                     <img src="img/logo.png" alt="logo" width="150px">
+                    <a href="#sidenav" class="sidenav-trigger">
+                        <i class="material-icons orange-text text-darken-4">menu</i> 
+                    </a>
                     <ul class="right">
                     <li>   
                     <a class="orange-text text-darken-4 " href="">Who We Are</a>
@@ -70,10 +73,35 @@
                     </ul>
                 </div>
             </nav>
+            <ul class="sidenav white" id="sidenav">
+            <li>   
+            <a class="orange-text text-darken-4 " href="">Who We Are</a>
+            </li>
+             <li>
+            <a class="orange-text text-darken-4 " href="">Find a Recipe</a>
+            </li>
+             <li>
+            <a class="orange-text text-darken-4 " href="">Our Reviews</a>
+            </li>
+             <li>
+            <a class="orange-text text-darken-4 " href="">Contact us</a>
+            </li> 
+             <li>
+            <a class=" btn btn-large orange darken-4 white-text " href="">LOGIN</a>
+            </li>
+            </ul>
     
 </header>
 <main>
-<div class="slider">
+    <div>
+    <img src="img/welcome-banner.jpg" alt="welcome-banner" class="responsive-img hide-on-large-only">
+    <div class="intro center-align hide-on-large-only">
+        <h3 class="white-text">Every Dish Tells a Story</h3>
+        <h5 class="white-text">Explore, cook, and create with us.</h5>
+        <button class="btn btn-flat btn-large orange darken-4 white-text">Get Started</button>
+        </div>
+        </div>
+<div class="slider hide-on-med-and-down">
     <ul class="slides">
         <li>
             <video autoplay muted loop class="">
@@ -102,14 +130,48 @@
                 <a class="btn btn-flat btn-large orange darken-4 white-text" href="">START YOUR JOURNEY</a>
             </div>
         </div>
-        <div class="col s12 m6 l6">
+        <div class="col s12 m6 l6 hide-on-med-and-down">
             <div class="card-content">
                     <img class="responsive-img" src="img/spagetti.png" alt="spagetti">
         </div>
     </div>
 </div>
 </div>
-<div class="container">
+<div class="slider hide-on-large-only">
+    <ul class="slides">
+        <li>
+            <a href="cake.html">
+                <div class="card z-depth-0">
+                    <div class="card-img">
+                    <img class="responsive-img" src="img/cake-main.jpg" alt="cake-main">
+                    <h6 class="cake white-text">Cakes</h6>
+                </div>
+            </div>
+            </a>
+        </li>
+        <li>
+            <div class="card-content">
+                <a href="chicken.html">
+                <div class="card z-depth-0">
+                <img class="responsive-img" src="img/chicken-main.jpg" alt="chicken-main">
+                <h6 class="chicken white-text">Chicken</h6>
+                </div>
+                </a>
+            </div>
+        </li>
+        <li>
+            <div class="card-content">
+                <a href="soup.html">
+                <div class="card z-depth-0">
+                <img class="responsive-img" src="img/soup-main.jpg" alt="soup-main">
+                <h6 class="soup white-text">Soup</h6>
+                </div>
+                </a>
+            </div>
+        </li>
+    </ul>
+</div>
+<div class="container hide-on-med-and-down">
     <h4 class="center-align">
         Select a <span class="orange-text text-darken-4"> <em>category</em> </span>
     </h4>
@@ -122,9 +184,8 @@
                     <h6 class="cake white-text">Cakes</h6>
                 </div>
             </div>
+            </a>
         </div>
-                
-    </a>
         <div class="col s12 m6 l4">
             <div class="card-content">
                 <a href="chicken.html">
@@ -132,9 +193,9 @@
                 <img class="responsive-img" src="img/chicken-main.jpg" alt="chicken-main">
                 <h6 class="chicken white-text">Chicken</h6>
                 </div>
+                </a>
             </div>
         </div>
-        </a>
         <div class="col s12 m6 l4">
             <div class="card-content">
                 <a href="soup.html">
@@ -142,14 +203,19 @@
                 <img class="responsive-img" src="img/soup-main.jpg" alt="soup-main">
                 <h6 class="soup white-text">Soup</h6>
                 </div>
+                </a>
             </div>
         </div>
-        </a>
     </div>
 </div>
 <div class="container">
     <div class="row">
-        <div class="col s12 m6 l6">
+        <div class="col s12 m6 l6 hide-on-large-only">
+            <div class="card-content">
+                <img src="img/chef-thumbs-up.jpg" alt="chef-thumbs-up" class="responsive-img">
+            </div>
+        </div>
+        <div class="col s12 m6 l6 hide-on-med-and-down">
             <div class="card-content">
                 <img class="responsive-img" src="img/chef.jpg" alt="chef">
             </div>
@@ -238,28 +304,28 @@
 <div class="container">
     <h4 class="center-align">Our Esteemed <span class="orange-text text-darken-4"><em>Cliente</em></span> </h4>
     <div class="row">
-        <div class="col s12 m4 l2">
+        <div class="col s6 m4 l2">
             <img class="responsive-img" src="img/rest-1.avif" alt="rest-1">
         </div>
-        <div class="col s12 m4 l2">
+        <div class="col s6 m4 l2">
            
                     <img src="img/rest-2.avif" alt="rest-2" class="responsive-img">
                
         </div>
-        <div class="col s12 m4 l2">
+        <div class="col s6 m4 l2">
                     <img src="img/rest-3.avif" alt="rest-3" class="responsive-img">
         </div>
-        <div class="col s12 m4 l2">
+        <div class="col s6 m4 l2">
             
                     <img src="img/rest-4.avif" alt="rest-4" class="responsive-img">
           
         </div>
-        <div class="col s12 m4 l2">
+        <div class="col s6 m4 l2">
            
                     <img src="img/rest-5.avif" alt="rest-5" class="responsive-img">
             
         </div>
-        <div class="col s12 m4 l2">
+        <div class="col s6 m4 l2">
            
                     <img src="img/rest-6.avif" alt="rest-6" class="responsive-img">
              
@@ -316,6 +382,7 @@
         <script>
         $(Document).ready(function(){
         $('.slider').slider({height:640, indicators:false});
+        $('.sidenav').sidenav();
         })
         </script>
 </body>
