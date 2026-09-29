@@ -48,59 +48,63 @@
 <body>
     <header>
     <nav class="white">
-                <div class="container">
-                    <img src="img/logo.png" alt="logo" width="150px">
-                    <a href="#sidenav" class="sidenav-trigger">
-                        <i class="material-icons orange-text text-darken-4">menu</i> 
-                    </a>
-                    <ul class="right hide-on-med-and-down">
-                    <li>   
+        <div class="container">
+            <img src="img/logo.png" alt="logo" width="150px">
+            <a href="#sidenav" class="sidenav-trigger">
+                <i class="material-icons orange-text text-darken-4">menu</i> 
+            </a>
+            <ul class="right hide-on-med-and-down">
+                <li>   
                     <a class="orange-text text-darken-4 " href="">Who We Are</a>
-                    </li>
-                    <li>
+                </li>
+                <li>
                     <a class="orange-text text-darken-4 " href="">Find A Recipe</a>
-                    </li>
-                    <li>
+                </li>
+                <li>
                     <a class="orange-text text-darken-4 " href="">Meet The Experts</a>
-                    </li>
-                    <li>
+                </li>
+                <li>
                     <a class="orange-text text-darken-4 " href="">Client</a>
-                    </li>
-                    <li>
-                <a class="btn btn-flat orange darken-4 white-text" href="">LOGIN</a>
-            </div>
-                    </li>
-                    </ul>
-                </div>
-            </nav>
-            <ul class="sidenav white" id="sidenav">
-            <li>   
-            <a class="orange-text text-darken-4 " href="">Who We Are</a>
-            </li>
-             <li>
-            <a class="orange-text text-darken-4 " href="">Find a Recipe</a>
-            </li>
-             <li>
-            <a class="orange-text text-darken-4 " href="">Our Reviews</a>
-            </li>
-             <li>
-            <a class="orange-text text-darken-4 " href="">Contact us</a>
-            </li> 
-             <li>
-            <a class=" btn btn-large orange darken-4 white-text " href="">LOGIN</a>
-            </li>
+                </li>
+                <li>
+                    <a class="btn btn-flat orange darken-4 white-text" href="">LOGIN</a>
+                </li>
             </ul>
-    
+        </div>
+    </nav>
+    <ul class="sidenav white" id="sidenav">
+        <li>   
+            <a class="orange-text text-darken-4 " href="">Who We Are</a>
+        </li>
+        <li>
+            <a class="orange-text text-darken-4 " href="">Find a Recipe</a>
+        </li>
+        <li>
+            <a class="orange-text text-darken-4 " href="">Our Reviews</a>
+        </li>
+        <li>
+            <a class="orange-text text-darken-4 " href="">Contact us</a>
+        </li> 
+        <li>
+            <a class=" btn btn-large orange darken-4 white-text " href="">LOGIN</a>
+        </li>
+    </ul>
 </header>
 <main>
-    <div>
-    <img src="img/welcome-banner.jpg" alt="welcome-banner" class="responsive-img hide-on-large-only">
-    <div class="intro center-align hide-on-large-only">
-        <h3 class="white-text">Every Dish Tells a Story</h3>
-        <h5 class="white-text">Explore, cook, and create with us.</h5>
-        <button class="btn btn-flat btn-large orange darken-4 white-text">Get Started</button>
-        </div>
-        </div>
+    <div class="slider hide-on-large-only ">
+        <ul class="slides">
+            <li>
+                <img src="img/welcome-banner.jpg" alt="welcome-banner" class="responsive-img">
+                <div class="caption">
+                    <div class="left-align">
+                        <h3 class="white-text">Every Dish Tells a Story</h3>
+                        <h5 class="white-text">Explore, cook, and create with us.</h5>
+                        <button class="btn btn-flat btn-large orange darken-4 white-text">Get Started</button>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
 <div class="slider hide-on-med-and-down">
     <ul class="slides">
         <li>
@@ -137,7 +141,7 @@
     </div>
 </div>
 </div>
-<div class="slider hide-on-large-only">
+<div class="slider recipe-type hide-on-large-only">
     <ul class="slides">
         <li>
             <a href="cake.html">
@@ -382,6 +386,7 @@
         <script>
         $(Document).ready(function(){
         $('.slider').slider({height:640, indicators:false});
+        $('.slider.recipe-type').slider({indicators:false});
         $('.sidenav').sidenav();
         })
         </script>
